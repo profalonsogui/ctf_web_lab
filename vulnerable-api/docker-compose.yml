@@ -1,10 +1,11 @@
 services:
   vulnerable-api:
     build: .
-
+    # Use the official Node.js image as the base image
+    # image: node:14
     container_name: vulnerable-api
-
+    # Map the current directory to /app in the container
     ports:
       - "3000:3000"
-
+    # Set the working directory in the container to /app
     restart: unless-stopped
