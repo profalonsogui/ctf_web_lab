@@ -1,2 +1,2 @@
-node_modules
-.env
+vulnerable-api/node_modules
+vulnerable-api/.env
