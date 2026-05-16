@@ -1,0 +1,10 @@
+services:
+  vulnerable-api:
+    build: .
+
+    container_name: vulnerable-api
+
+    ports:
+      - "3000:3000"
+
+    restart: unless-stopped
